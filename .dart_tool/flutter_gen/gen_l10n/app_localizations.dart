@@ -100,6 +100,30 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'¡Hola Mundo!'**
   String get helloWorld;
+
+  /// No description provided for @english.
+  ///
+  /// In es, this message translates to:
+  /// **'Inglés'**
+  String get english;
+
+  /// No description provided for @spanish.
+  ///
+  /// In es, this message translates to:
+  /// **'Español'**
+  String get spanish;
+
+  /// No description provided for @portuguese.
+  ///
+  /// In es, this message translates to:
+  /// **'Portugués'**
+  String get portuguese;
+
+  /// No description provided for @choose.
+  ///
+  /// In es, this message translates to:
+  /// **'Elige un idioma'**
+  String get choose;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

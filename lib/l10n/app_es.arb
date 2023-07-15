@@ -1,3 +1,7 @@
 {
-    "helloWorld": "¡Hola Mundo!"
+    "helloWorld": "¡Hola Mundo!",
+    "english": "Inglés",
+    "spanish": "Español",
+    "portuguese": "Portugués",
+    "choose": "Elige un idioma"
 }

@@ -1,0 +1,80 @@
+build/
+*.apk
+*.apks
+*.aab
+*.dart_tool/
+*.flutter-plugins
+*.flutter-plugins-dependencies
+*.flutter-plugins-metadata
+
+# Arquivos de dependências (gerados pelo Flutter SDK)
+packages/
+
+# Arquivos de configuração
+*.iml
+*.metadata
+*.lock
+*.log
+*.ini
+
+# IDEs
+.idea/
+.vscode/
+
+# Cache
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-plugins-metadata
+.pub/
+.pub-cache/
+build/
+.dart_tool/
+.packages
+flutter_service_worker.js
+google-services.json
+ios/Pods/
+*.xcodeproj/
+*.xcworkspace/
+
+# Executáveis
+*.exe
+*.out
+
+# Outros
+*.DS_Store
+*.idea/
+*.iml
+*.lock
+*.metadata
+*.log
+*.ini
+*.flutter-plugins
+*.flutter-plugins-dependencies
+*.flutter-plugins-metadata
+*.podspec.lock
+*.podspec.yaml
+*.jks
+*.keystore
+*.key
+
+# Chaves de API (não submeta chaves de API no repositório!)
+*.env
+.env.prod
+.env.dev
+.env.local
+
+# Configuração do Android
+**/local.properties
+
+# Configuração do iOS
+**/.generated/
+**/Pods/
+**/Podfile.lock
+**/Runner.xcworkspace/
+**/xcshareddata/
+**/Pods/Manifest.lock
+
+# Flutter Plugin Symlinks
+bin/cache/artifacts/engine/ios
+bin/cache/artifacts/engine/darwin-x64

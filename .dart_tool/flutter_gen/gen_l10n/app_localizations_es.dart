@@ -6,4 +6,16 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get helloWorld => '¡Hola Mundo!';
+
+  @override
+  String get english => 'Inglés';
+
+  @override
+  String get spanish => 'Español';
+
+  @override
+  String get portuguese => 'Portugués';
+
+  @override
+  String get choose => 'Elige un idioma';
 }
