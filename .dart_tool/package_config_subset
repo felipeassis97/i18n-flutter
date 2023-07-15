@@ -30,6 +30,10 @@ flutter_lints
 2.18
 file:///Users/felipe.assis/.pub-cache/hosted/pub.dev/flutter_lints-2.0.2/
 file:///Users/felipe.assis/.pub-cache/hosted/pub.dev/flutter_lints-2.0.2/lib/
+intl
+2.12
+file:///Users/felipe.assis/.pub-cache/hosted/pub.dev/intl-0.18.0/
+file:///Users/felipe.assis/.pub-cache/hosted/pub.dev/intl-0.18.0/lib/
 js
 2.19
 file:///Users/felipe.assis/.pub-cache/hosted/pub.dev/js-0.6.7/
@@ -94,6 +98,10 @@ flutter
 3.0
 file:///Users/felipe.assis/fvm/versions/stable/packages/flutter/
 file:///Users/felipe.assis/fvm/versions/stable/packages/flutter/lib/
+flutter_localizations
+3.0
+file:///Users/felipe.assis/fvm/versions/stable/packages/flutter_localizations/
+file:///Users/felipe.assis/fvm/versions/stable/packages/flutter_localizations/lib/
 flutter_test
 3.0
 file:///Users/felipe.assis/fvm/versions/stable/packages/flutter_test/
