@@ -20,6 +20,9 @@ dependencies:
   profile_module:
     path: ../profile_module
 
+  design_system_module:
+    path: ../design_system_module
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

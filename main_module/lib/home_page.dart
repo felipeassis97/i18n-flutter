@@ -1,8 +1,10 @@
+import 'package:design_system_module/l10n/localizations/localizations_design_system_module.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:localizations_app/l10n/localizations/localizations_main_module.dart';
 import 'package:localizations_app/resources/app_assets.dart';
 import 'package:localizations_app/resources/locale_selector.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:profile_module/l10n/localizations/localizations_profile_module.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
@@ -19,21 +21,60 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(AppLocalizations.of(context)?.helloWorld ?? 'test'),
+        title: Text(LocalizationsMainModule.of(context)!.choose),
       ),
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            GestureDetector(
-              onTap: () => _showDialog(context),
-              child: Text(
-                AppLocalizations.of(context)?.choose ?? '',
-                style: Theme.of(context).textTheme.titleMedium,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              GestureDetector(
+                onTap: () => _showDialog(context),
+                child: Text(
+                  LocalizationsMainModule.of(context)!.choose,
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 24),
+              Row(children: [
+                Text(
+                  'main_module: ',
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                Text(
+                  LocalizationsMainModule.of(context)!.helloWorld,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+              ]),
+              const SizedBox(height: 8),
+              Row(children: [
+                Text(
+                  'profile_module: ',
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                Text(
+                  LocalizationsProfileModule.of(context)!.helloWorld,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+              ]),
+              const SizedBox(height: 8),
+              Row(children: [
+                Text(
+                  'design_system_module: ',
+                  style: Theme.of(context).textTheme.titleMedium,
+                ),
+                Flexible(
+                  child: Text(
+                    LocalizationsDesignSystemModule.of(context)!.helloWorld,
+                    maxLines: 1,
+                    style: Theme.of(context).textTheme.titleSmall,
+                  ),
+                ),
+              ]),
+            ],
+          ),
         ),
       ),
     );
@@ -58,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       SvgPicture.asset(AppAssets.english, height: 40),
                       const SizedBox(width: 8),
                       Text(
-                        AppLocalizations.of(context)?.english ?? '',
+                        LocalizationsMainModule.of(context)!.english,
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ],
@@ -75,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       SvgPicture.asset(AppAssets.portuguese, height: 40),
                       const SizedBox(width: 8),
                       Text(
-                        AppLocalizations.of(context)?.portuguese ?? '',
+                        LocalizationsMainModule.of(context)!.portuguese,
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ],
@@ -92,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       SvgPicture.asset(AppAssets.spanish, height: 40),
                       const SizedBox(width: 8),
                       Text(
-                        AppLocalizations.of(context)?.spanish ?? '',
+                        LocalizationsMainModule.of(context)!.spanish,
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ],

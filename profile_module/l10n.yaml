@@ -1,7 +1,7 @@
 arb-dir: lib/l10n/translations
 output-dir: lib/l10n/localizations
-output-localization-file: localizations_main_module.dart
-output-class: LocalizationsMainModule
+output-class: LocalizationsProfileModule
+output-localization-file: localizations_profile_module.dart
 template-arb-file: app_en.arb
 use-escaping: true
 synthetic-package: false
